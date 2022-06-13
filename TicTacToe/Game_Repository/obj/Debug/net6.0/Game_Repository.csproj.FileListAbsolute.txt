@@ -1,0 +1,12 @@
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\Game_Repository.csproj.AssemblyReference.cache
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\Game_Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\Game_Repository.AssemblyInfoInputs.cache
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\Game_Repository.AssemblyInfo.cs
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\Game_Repository.csproj.CoreCompileInputs.cache
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\bin\Debug\net6.0\Game_Repository.deps.json
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\bin\Debug\net6.0\Game_Repository.dll
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\bin\Debug\net6.0\Game_Repository.pdb
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\Game_Repository.dll
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\refint\Game_Repository.dll
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\Game_Repository.pdb
+C:\Users\ssagl\ElevenFiftyProjects\codingFoundations\assignments\PairGame\TicTacToe\Game_Repository\obj\Debug\net6.0\ref\Game_Repository.dll
