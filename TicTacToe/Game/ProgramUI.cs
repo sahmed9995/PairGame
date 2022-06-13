@@ -13,6 +13,10 @@ using Game_Repository;
 
         static int checker = 0;
 
+        static int point1 = 0;
+
+        static int point2 = 0;
+
         public readonly GameRepository _repo = new GameRepository();
 
         public void Run() {
@@ -40,8 +44,20 @@ using Game_Repository;
                         break;
                     case "3":
                         Console.Clear();
-                        System.Console.WriteLine("Player 1 points: Player 2 points: \n" +
-                        "Bye bye");
+                        System.Console.WriteLine($"Player 1 points: {point1}          Player 2 points: {point2} \n" +
+                        "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                        if (point1 > point2) {
+                            System.Console.WriteLine("Player 1 has won the tournament! Better Luck Next Time, Player 2.");
+                        }
+                        else if (point2 > point1) {
+                            System.Console.WriteLine("Player 2 has won the tournament! Better Luck Next Time, Player 1.");
+                        }
+                        else if (point1 == point2) {
+                            System.Console.WriteLine("The tournament has ended in a tie!");
+                        }
+                        point1 = 0;
+                        point2 = 0;
+                        System.Console.WriteLine("Bye bye!");
                         continueToRun = false;
                         break;
                 } 
@@ -91,16 +107,27 @@ using Game_Repository;
 
             _repo.Board();
 
+              if ((counter % 2) + 1 == 1) {
+                point1++;
+            }
+            else if ((counter % 2) + 1 == 2) {
+                point2++;
+            }
+
             if (checker == 1) {
                 System.Console.WriteLine($"Congratulations! Player {(counter % 2)+1} has won!\n");
+                System.Console.WriteLine($"Player 1 has {point1} points and Player 2 has {point2} points.");
                 Init();
                 WaitForKey();
             }
             else if (checker == -1) {
                 System.Console.WriteLine("Cat's Game! The game has ended in a draw.");
+                System.Console.WriteLine($"Player 1 has {point1} points and Player 2 has {point2} points.");
                 Init();
                 WaitForKey();
             }
+
+          
         }
 
         public void Instructions() {
