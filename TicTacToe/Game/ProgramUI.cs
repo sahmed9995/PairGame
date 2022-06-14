@@ -31,7 +31,7 @@ using Game_Repository;
                 Console.Clear();
                 System.Console.WriteLine("1. Start new TicTacToe Game\n" +
                 "2. Read Instructions\n" +
-                "3. Exit");
+                "3. Exit from the game.");
 
                 string select = Console.ReadLine();
 
