@@ -6,6 +6,9 @@ using Game_Repository;
 
     class ProgramUI
     {
+        public string name1 = "Player 1";
+
+        public string name2 = "Player 2";
 
         static int counter = 1;
 
@@ -29,28 +32,36 @@ using Game_Repository;
 
             do {
                 Console.Clear();
-                System.Console.WriteLine("1. Start new TicTacToe Game\n" +
-                "2. Read Instructions\n" +
-                "3. Exit from the game.");
+                System.Console.WriteLine($"Tic-Tac-Toe              {name1} Wins: {point1} {name2} Wins: {point2}\n" + "===========================================================\n");
+                _repo.EmptyBoard();
+                System.Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++\n");
+                System.Console.WriteLine("Please choose an option from the following menu:\n");
+                System.Console.WriteLine("1. Choose player names\n" + 
+                "2. Start new Tic-Tac-Toe Game\n" +
+                "3. Read Instructions\n" +
+                "4. Exit\n");
 
                 string select = Console.ReadLine();
 
                 switch (select) {
                     case "1":
-                        CreateNewGame();
+                        Names();
                         break;
                     case "2":
-                        Instructions();
+                        CreateNewGame();
                         break;
                     case "3":
+                        Instructions();
+                        break;
+                    case "4":
                         Console.Clear();
-                        System.Console.WriteLine($"Player 1 points: {point1}          Player 2 points: {point2} \n" +
+                        System.Console.WriteLine($"{name1} points: {point1}          {name2} points: {point2} \n" +
                         "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         if (point1 > point2) {
-                            System.Console.WriteLine("Player 1 has won the tournament! Better Luck Next Time, Player 2.");
+                            System.Console.WriteLine($"{name1} has won the tournament! Better Luck Next Time, {name2}.");
                         }
                         else if (point2 > point1) {
-                            System.Console.WriteLine("Player 2 has won the tournament! Better Luck Next Time, Player 1.");
+                            System.Console.WriteLine($"{name2} has won the tournament! Better Luck Next Time, {name1}.");
                         }
                         else if (point1 == point2) {
                             System.Console.WriteLine("The tournament has ended in a tie!");
@@ -64,6 +75,21 @@ using Game_Repository;
             } while (continueToRun);
         }
 
+        public void Names() {
+
+            Console.Clear();
+
+            System.Console.WriteLine("Player 1, please enter your name:\n");
+
+            name1 = Console.ReadLine();
+
+            System.Console.WriteLine("Player 2. please enter your name:\n");
+
+            name2 = Console.ReadLine();
+
+            WaitForKey();
+        }
+
         public void CreateNewGame() {
 
             Console.Clear();
@@ -71,17 +97,15 @@ using Game_Repository;
             System.Console.WriteLine("New Tic-Tac-Game\n" +
             "--------------------------------------------");
 
-            _repo.Board();
-
             do {
 
                 _repo.Board();
 
                 if (counter % 2 != 0) {
-                    System.Console.WriteLine("Player 1: Choose where to place your 'X'...");
+                    System.Console.WriteLine($"{name1}: Choose where to place your 'X'...");
                 } 
                 else if (counter % 2 ==0) {
-                    System.Console.WriteLine("Player 2: Choose where to place your 'O'...");
+                    System.Console.WriteLine($"{name2}: Choose where to place your 'O'...");
                 }
 
                 placeholder = int.Parse(Console.ReadLine());
@@ -105,29 +129,26 @@ using Game_Repository;
 
             Console.Clear();
 
-            _repo.Board();
-
-              if ((counter % 2) + 1 == 1) {
+            if (checker == 1 && (counter % 2) + 1 == 1) {
                 point1++;
+                System.Console.WriteLine($"Congratulations! {name1} has won!\n");
+                System.Console.WriteLine($"{name1} has {point1} points and {name2} has {point2} points.\n");
+                Init();
+                WaitForKey();
             }
-            else if ((counter % 2) + 1 == 2) {
+            else if (checker == 1 && (counter % 2) + 1 == 2) {
                 point2++;
-            }
-
-            if (checker == 1) {
-                System.Console.WriteLine($"Congratulations! Player {(counter % 2)+1} has won!\n");
-                System.Console.WriteLine($"Player 1 has {point1} points and Player 2 has {point2} points.");
+                System.Console.WriteLine($"Congratulations! {name2} has won!\n");
+                System.Console.WriteLine($"{name1} has {point1} points and {name2} has {point2} points.\n");
                 Init();
                 WaitForKey();
             }
             else if (checker == -1) {
-                System.Console.WriteLine("Cat's Game! The game has ended in a draw.");
-                System.Console.WriteLine($"Player 1 has {point1} points and Player 2 has {point2} points.");
+                System.Console.WriteLine("Cat's Game! The game has ended in a draw.\n");
+                System.Console.WriteLine($"{name1} has {point1} points and {name2} has {point2} points.\n");
                 Init();
                 WaitForKey();
             }
-
-          
         }
 
         public void Instructions() {
@@ -145,7 +166,7 @@ using Game_Repository;
         }
 
         private void WaitForKey() {
-            System.Console.WriteLine("Please press any key to return to the main menu...");
+            System.Console.WriteLine("Please press any key to return to the main menu...\n");
 
             Console.ReadKey();
         }
