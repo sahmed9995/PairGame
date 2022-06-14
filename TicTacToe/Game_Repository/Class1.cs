@@ -3,6 +3,15 @@ public class GameRepository
 {
     public char[] tic = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
+    public void EmptyBoard() {
+        System.Console.WriteLine("    |    |     \n" +
+        "____|____|____\n" +
+        "    |    |     \n" +
+        "____|____|____\n" +
+        "    |    |     \n" +
+        "    |    |     \n");
+    }
+
 
     public void Board() {
         System.Console.WriteLine("     |     |     \n" + 
