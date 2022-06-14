@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ssagl\\ElevenFiftyProjects\\codingFoundations\\assignments\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj": {}
+    "C:\\Users\\rstua\\OneDrive\\Desktop\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\csharpbasics\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ssagl\\ElevenFiftyProjects\\codingFoundations\\assignments\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj": {
+    "C:\\Users\\rstua\\OneDrive\\Desktop\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\csharpbasics\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssagl\\ElevenFiftyProjects\\codingFoundations\\assignments\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj",
+        "projectUniqueName": "C:\\Users\\rstua\\OneDrive\\Desktop\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\csharpbasics\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj",
         "projectName": "Game_Repository",
-        "projectPath": "C:\\Users\\ssagl\\ElevenFiftyProjects\\codingFoundations\\assignments\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj",
-        "packagesPath": "C:\\Users\\ssagl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssagl\\ElevenFiftyProjects\\codingFoundations\\assignments\\PairGame\\TicTacToe\\Game_Repository\\obj\\",
+        "projectPath": "C:\\Users\\rstua\\OneDrive\\Desktop\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\csharpbasics\\PairGame\\TicTacToe\\Game_Repository\\Game_Repository.csproj",
+        "packagesPath": "C:\\Users\\rstua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rstua\\OneDrive\\Desktop\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\csharpbasics\\PairGame\\TicTacToe\\Game_Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ssagl\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rstua\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
