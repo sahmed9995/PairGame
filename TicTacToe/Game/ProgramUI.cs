@@ -83,7 +83,7 @@ using Game_Repository;
 
             name1 = Console.ReadLine();
 
-            System.Console.WriteLine("Player 2. please enter your name:\n");
+            System.Console.WriteLine("Player 2, please enter your name:\n");
 
             name2 = Console.ReadLine();
 
